@@ -14,9 +14,27 @@ td{
     font-size: 0.9rem;
 }
 
+tr:hover {
+    background-color: lightgray;
+}
+
+td, th{
+    text-align: center;
+}
+
+td:nth-of-type(2){
+    text-align: left;
+    padding-left: 5px;
+}
+
 table {
     border-collapse: collapse;
     width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin:0 auto;
 }
 
 .flex {
@@ -50,7 +68,8 @@ table {
 
 h1,h2{
     text-align: center;
-    margin: 10px 0;
+    margin: 20px;
+    border : 3px black double;
 }
 
 nav {
@@ -103,4 +122,46 @@ form input[type=submit], input[type=button]{
     background-color: tomato;
     border:none;
     padding : 10px;
+    color : white;
+}
+
+.btn {
+    width: 100%;
+    background-color: tomato;
+    border:none;
+    text-decoration: none;
+    color : white;
+    
+}
+
+.grey {
+    background-color: grey;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+}
+
+.w100 {
+    width: 100%;
+}
+
+
+.disabled {
+    cursor: not-allowed;
+}
+
+.notification {
+    background-color: limegreen;
+    width: 300px;
+    position : fixed;
+    top : 45px;
+    right: 0;
+    z-index: 10;
+    padding: 10px;
+    border-radius: 5px;
+    color:white;
+}
+
+.error {
+    color: red;
 }

@@ -6,6 +6,11 @@
         "support" => ["voir", "ajouter", "modifier", "supprimer"]
     ];
 
+    if(isset($_GET["section"]) && $_GET["section"]=="error"){
+        include("views/error/404.php");
+        exit();
+    }
+
     if(isset($_GET["section"], $_GET["action"])){
         $section = $_GET["section"];
         $action = $_GET["action"];

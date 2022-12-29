@@ -19,10 +19,13 @@
         <table>
             <thead>
             <tr>
+                <th>🗑</th>
                 <th>Titre</th>
                 <th>Genre</th>
                 <th>Support</th>
                 <th>Auteur</th>
+                <th>✎</th>
+                
             </tr>
             </thead>
             <tbody>
@@ -32,10 +35,13 @@
             if(count($livres) > 0){
                 foreach($livres as $livre){
                     echo "<tr>";
+                    echo "<td><a class='btn' href='?section=livre&action=supprimer&id=".$livre["livre_id"]."'>🗑</a>";
                     echo "<td>" . $livre["titre"] . "</td>";
                     echo "<td>" . $livre["genre"] . "</td>";
                     echo "<td>" . $livre["support"] . "</td>";
                     echo "<td>" . $livre["auteur2"] . "</td>";
+                    echo "<td><a class='btn' href='?section=livre&action=modifier&id=".$livre["livre_id"]."'>✎</a>";
+                    
                     echo "</tr>";
 
                 }
@@ -66,5 +72,14 @@
         rechercher();
         
     });
+
+    let notif = document.querySelector(".notification");
+    if(notif){
+        notif.addEventListener("mouseover", function(e){
+            setTimeout(() => {
+                document.querySelector(".notification").outerHTML = "";
+            }, 1000);
+        });
+    }
 
 </script>

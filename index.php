@@ -1,4 +1,5 @@
 <?php
+    session_start();
     include("models/connexion.php");
 
     include("views/html/header.php");
