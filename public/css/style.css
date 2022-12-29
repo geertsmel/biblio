@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: monospace;
+    font-size: 1.1rem
+}
+
+table, td, th {
+    border: 1px solid black;
+}
+
+td{
+    font-size: 0.9rem;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.col{
+    flex-direction: column;
+}
+
+.sa{
+    justify-content: space-around;
+}
+
+#gauche, #droite {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 20px;
+    
+}
+#gauche {
+    width: 20%;
+}
+#droite {
+    width: 75%;
+}
+
+h1,h2{
+    text-align: center;
+    margin: 10px 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    background-color: tomato;
+    padding : 10px;
+}
+
+nav a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: tomato;
+    color:white;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+form div {
+    margin : 10px 0;
+}
+
+
+
+form input[type=submit], input[type=button]{
+    width: 100%;
+    background-color: tomato;
+    border:none;
+    padding : 10px;
+}
