@@ -56,11 +56,15 @@
     </div>
 
 <script>
-    btn_search.addEventListener("click", function(){
-        let table = document.querySelector("table").children[1];
-        console.log(table);
-    });
-</script>
-    
+    document.forms[0].addEventListener("submit", function(e){
+        e.preventDefault();
+        rechercher();
 
-ssh-keygen -t ed25519 -C "geerts.m@hotmail.com"
+    })
+
+    btn_search.addEventListener("click", function(e){
+        rechercher();
+        
+    });
+
+</script>

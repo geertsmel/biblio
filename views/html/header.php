@@ -6,5 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bibliothèque</title>
     <link rel="stylesheet" href="public/css/style.css">
+    <script src="public/js/script.js"></script>
 </head>
 <body>
