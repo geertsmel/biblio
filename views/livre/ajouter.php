@@ -6,7 +6,7 @@
     </div>
     <div class="row">
         <label for="titre">Titre :</label>
-        <input type="text" name="titre" id="titre" class="w100" value="<?= $titre ?>">
+        <textarea name="titre" id="titre" class="w100"><?= $titre ?></textarea>
     </div>
     <div class="row">
         <label for="auteur">Auteur :</label>
@@ -43,7 +43,10 @@
             ?>
         </select>
     </div>
-    <input type="submit" value="Ajouter" disabled id="btn_save" class="disabled">
+    <div class="row">
+        <a href="?section=livre&action=voir" class="btn grey">Annuler</a>
+        <input type="submit" value="Ajouter" disabled id="btn_save" class="disabled">
+    </div>
 </form>
 </div>
 <script>

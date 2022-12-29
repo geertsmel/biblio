@@ -27,7 +27,7 @@
             if(count($livres) > 0){
                 foreach($livres as $livre){
                     echo "<tr>";
-                    echo "<td>" . $livre["titre"] . "</td>";
+                    echo "<td>" . nl2br($livre["titre"]) . "</td>";
                     echo "<td>" . $livre["genre"] . "</td>";
                     echo "<td>" . $livre["support"] . "</td>";
                     echo "<td>" . $livre["auteur2"] . "</td>";

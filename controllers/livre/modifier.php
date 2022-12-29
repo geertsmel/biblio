@@ -16,8 +16,11 @@
 
 
     if(isset($_POST["titre"], $_POST["auteur"], $_POST["support"], $_POST["genre"])){
+    
         try {
             livreUpdate($_POST["titre"], $_POST["auteur"], $_POST["genre"], $_POST["support"], $_GET["id"]);
+            $_SESSION["notification"] = "Le livre '" . $_POST["titre"] . "' a bien été modifié";
+            header("Location:?section=livre&action=voir");
         }
         catch(PDOException $e){
             var_dump($e);

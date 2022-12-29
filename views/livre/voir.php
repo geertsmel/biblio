@@ -36,7 +36,7 @@
                 foreach($livres as $livre){
                     echo "<tr>";
                     echo "<td><a class='btn' href='?section=livre&action=supprimer&id=".$livre["livre_id"]."'>🗑</a>";
-                    echo "<td>" . $livre["titre"] . "</td>";
+                    echo "<td>" . nl2br($livre["titre"]) . "</td>";
                     echo "<td>" . $livre["genre"] . "</td>";
                     echo "<td>" . $livre["support"] . "</td>";
                     echo "<td>" . $livre["auteur2"] . "</td>";
