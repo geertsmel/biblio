@@ -29,4 +29,5 @@
             <p><a href="?section=livre&action=ajouter">Ajouter</a></p>
         </div>
     </div>
+    <p><a href="?section=backup&action=voir">Backup</a></p>
 </nav>

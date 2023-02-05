@@ -3,7 +3,8 @@
         "livre" => ["search_auteur", "search_titre","voir", "ajouter", "modifier", "supprimer"],
         "auteur" => ["voir", "ajouter", "modifier", "supprimer"],
         "genre" => ["voir", "ajouter", "modifier", "supprimer"],
-        "support" => ["voir", "ajouter", "modifier", "supprimer"]
+        "support" => ["voir", "ajouter", "modifier", "supprimer"],
+        "backup" => ["voir"]
     ];
 
     if(isset($_GET["section"]) && $_GET["section"]=="error"){
