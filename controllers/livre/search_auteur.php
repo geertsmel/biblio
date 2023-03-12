@@ -4,8 +4,8 @@ $message="";
 $nom = "";
 $prenom = "";
 if(isset($_POST["nom"], $_POST["prenom"])){
-    $nom = trim($_POST["nom"]);
-    $prenom = trim($_POST["prenom"]);
+    $nom = "%".trim($_POST["nom"])."%";
+    $prenom = "%".trim($_POST["prenom"])."%";
     
     $db = connexion();
     if(strlen($nom) > 0 && strlen($prenom)> 0){

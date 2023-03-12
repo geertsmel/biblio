@@ -16,10 +16,10 @@
 
 
     if(isset($_POST["titre"], $_POST["auteur"], $_POST["genre"], $_POST["support"])){
-        $titre = $_POST["titre"];
-        $auteur = $_POST["auteur"];
-        $genre = $_POST["genre"];
-        $support = $_POST["support"];
+        $titre = trim($_POST["titre"]);
+        $auteur = trim($_POST["auteur"]);
+        $genre = trim($_POST["genre"]);
+        $support = trim($_POST["support"]);
 
 
         try {
