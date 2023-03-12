@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : dim. 05 fév. 2023 à 19:10
+-- Généré le : dim. 12 mars 2023 à 11:47
 -- Version du serveur : 10.4.25-MariaDB
 -- Version de PHP : 8.0.23
 
@@ -38,14 +38,13 @@ CREATE TABLE `auteur` (
 --
 
 INSERT INTO `auteur` (`auteur_id`, `nom`, `prenom`) VALUES
-(96, ' Mcpartlin', 'Anna'),
-(49, 'Anglade ', 'Jean'),
+(49, 'Anglade', 'Jean'),
 (99, 'Atkins', 'Dani'),
 (23, 'Bannalec', 'Jean-Luc'),
 (9, 'Baron', 'Sylvie'),
 (11, 'Benzoni', 'Juliette'),
-(91, 'Blaine ', 'Emily'),
-(63, 'Bodin ', 'Nathalie'),
+(91, 'Blaine', 'Emily'),
+(63, 'Bodin', 'Nathalie'),
 (57, 'Bordes', 'Gilbert'),
 (93, 'Borelli', 'Eve'),
 (86, 'Boulouri', 'Johanna'),
@@ -59,9 +58,9 @@ INSERT INTO `auteur` (`auteur_id`, `nom`, `prenom`) VALUES
 (78, 'Chavy', 'Isabelle'),
 (90, 'Chomin', 'Cécile'),
 (46, 'Christie', 'Agatha'),
-(28, 'Coffe ', 'Jean-Pierre'),
-(15, 'Cornaille ', 'Didier'),
-(52, 'Coulonges ', 'Georges'),
+(28, 'Coffe', 'Jean-Pierre'),
+(15, 'Cornaille', 'Didier'),
+(52, 'Coulonges', 'Georges'),
 (17, 'Courchay', 'Claude'),
 (22, 'D\'Onaglia', 'Frédérick'),
 (70, 'de Palet', 'Marie'),
@@ -73,14 +72,14 @@ INSERT INTO `auteur` (`auteur_id`, `nom`, `prenom`) VALUES
 (69, 'Dupuy', 'Marie-Bernadette'),
 (39, 'Duquesne', 'Jacques'),
 (100, 'Duval', 'Alain'),
-(94, 'Duval ', 'Chloé'),
+(94, 'Duval', 'Chloé'),
 (36, 'Ellison', 'Andréa'),
 (88, 'Endelys', 'Sophie'),
 (60, 'Enders', 'Julia'),
-(13, 'Festy ', 'Danièle'),
-(73, 'Fischer ', 'Elise'),
+(13, 'Festy', 'Danièle'),
+(73, 'Fischer', 'Elise'),
 (43, 'Fleming', 'Léah'),
-(42, 'Garcia ', 'Kami'),
+(42, 'Garcia', 'Kami'),
 (77, 'Giraud', 'Delphine'),
 (8, 'Gounelle', 'Laurent'),
 (12, 'Grimaldi', 'Virginie'),
@@ -94,13 +93,13 @@ INSERT INTO `auteur` (`auteur_id`, `nom`, `prenom`) VALUES
 (72, 'Jacobs', 'Anne'),
 (34, 'Japrisot', 'Sébastien'),
 (14, 'Jeury', 'Michel'),
-(41, 'Kinsella ', 'Sophie'),
+(41, 'Kinsella', 'Sophie'),
 (30, 'Konsalik', 'Heinz'),
 (55, 'L.Hay', 'Louise'),
 (7, 'Laborie', 'Christian'),
 (101, 'Le Goasgoz', 'Marine'),
 (16, 'Legardinier', 'Gilles'),
-(74, 'Lemaire ', 'Philippe'),
+(74, 'Lemaire', 'Philippe'),
 (27, 'Levy', 'Marc'),
 (82, 'Lorrain', 'France'),
 (75, 'Malroux', 'Antonin'),
@@ -111,13 +110,14 @@ INSERT INTO `auteur` (`auteur_id`, `nom`, `prenom`) VALUES
 (29, 'Mazeau', 'Jacques'),
 (24, 'McCoy', 'Sarah'),
 (25, 'McKenzie', 'Sophie'),
+(96, 'Mcpartlin', 'Anna'),
 (35, 'Meyer', 'Stéphanie'),
 (62, 'Meyer', 'Stephenie'),
 (47, 'Münzer', 'Hanni'),
 (2, 'Musso', 'Guillaume'),
 (67, 'Nelson Spielman', 'Lori'),
 (102, 'Néron Morgat', 'Evelyne'),
-(84, 'Norton ', 'Claire'),
+(84, 'Norton', 'Claire'),
 (40, 'Nothomb', 'Amélie'),
 (56, 'Orsenna', 'Erik'),
 (87, 'Pécassou', 'Bernadette'),
@@ -125,19 +125,20 @@ INSERT INTO `auteur` (`auteur_id`, `nom`, `prenom`) VALUES
 (21, 'Persson', 'Gunilla Linn'),
 (59, 'Pion', 'Marylène'),
 (38, 'Pisco', 'Cristina'),
-(95, 'Pluchard ', 'Mireille'),
+(95, 'Pluchard', 'Mireille'),
 (97, 'Premoli', 'Anna'),
 (71, 'Riley', 'Lucinda'),
 (66, 'Roberts', 'Nora'),
-(76, 'Roche ', 'Florence'),
+(76, 'Roche', 'Florence'),
 (83, 'Roussary', 'Jean-Pierre'),
 (44, 'Rowling', 'J.K.'),
-(45, 'Sabatier ', 'Robert'),
+(105, 'Sabard', 'Clarisse'),
+(45, 'Sabatier', 'Robert'),
 (98, 'Swan', 'Karen'),
 (5, 'Tal Men', 'Sophie'),
 (1, 'Valognes', 'Aurélie'),
-(65, 'Vareille ', 'Marie'),
-(33, 'Varel ', 'Brigitte');
+(65, 'Vareille', 'Marie'),
+(33, 'Varel', 'Brigitte');
 
 -- --------------------------------------------------------
 
@@ -515,12 +516,20 @@ INSERT INTO `livre` (`livre_id`, `titre`, `fk_auteur`, `fk_genre`, `fk_support`)
 (362, 'Hier ou demain', 104, 2, 2),
 (364, 'Le jardin des cyprès', 68, 2, 2),
 (365, 'Trois rêves', 66, 2, 2),
-(367, 'La grange de Rochebrune\r\n', 68, 2, 2),
 (374, 'Les couleurs du silence', 77, 2, 2),
 (375, 'L\'éclair d\'argent', 92, 2, 2),
 (376, 'Une promesse bleu horizon', 92, 2, 2),
 (377, 'Le dernier salut de l\'amazone', 92, 2, 2),
-(378, 'La villa aux étoffes\r\n1 La villa aux étoffes\r\n2 Les filles de la villa aux étoffes\r\n3 L\'héritage de la villa aux étoffes\r\n4 Retour à la villa aux étoffes\r\n', 72, 2, 2);
+(378, 'La villa aux étoffes\r\n1 La villa aux étoffes\r\n2 Les filles de la villa aux étoffes\r\n3 L\'héritage de la villa aux étoffes\r\n4 Retour à la villa aux étoffes\r\n', 72, 2, 2),
+(379, 'Un ténébreux amant', 66, 2, 2),
+(380, 'A travers la nuit et le vent', 68, 2, 2),
+(381, 'Piège mortel à Belle Île', 23, 1, 2),
+(382, 'L\'homme de leur vie', 6, 2, 2),
+(383, 'La maison de l\'orchidée', 71, 2, 2),
+(384, 'La vie rêvée des chaussettes orphelines', 65, 2, 2),
+(385, 'Le secret d\'Helena', 71, 2, 2),
+(386, 'La jeune fille sur la falaise', 71, 2, 2),
+(387, 'La femme au manteau violet', 105, 2, 2);
 
 -- --------------------------------------------------------
 
@@ -582,7 +591,7 @@ ALTER TABLE `support`
 -- AUTO_INCREMENT pour la table `auteur`
 --
 ALTER TABLE `auteur`
-  MODIFY `auteur_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=105;
+  MODIFY `auteur_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=108;
 
 --
 -- AUTO_INCREMENT pour la table `genre`
@@ -594,7 +603,7 @@ ALTER TABLE `genre`
 -- AUTO_INCREMENT pour la table `livre`
 --
 ALTER TABLE `livre`
-  MODIFY `livre_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=379;
+  MODIFY `livre_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=388;
 
 --
 -- AUTO_INCREMENT pour la table `support`

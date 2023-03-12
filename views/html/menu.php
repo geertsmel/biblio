@@ -11,8 +11,8 @@
     <div class="dropdown">
         <a href="?section=auteur&action=voir">Auteurs</a>
         <div class="dropdown-content">
-            <p><a href="?section=livre&action=voir">Voir</a></p>
-            <p><a href="?section=livre&action=ajouter">Ajouter</a></p>
+            <p><a href="?section=auteur&action=voir">Voir</a></p>
+            <p><a href="?section=auteur&action=ajouter">Ajouter</a></p>
         </div>
     </div>
     <div class="dropdown">
