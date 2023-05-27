@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : dim. 12 mars 2023 à 11:47
+-- Généré le : sam. 27 mai 2023 à 09:24
 -- Version du serveur : 10.4.25-MariaDB
 -- Version de PHP : 8.0.23
 
@@ -80,6 +80,7 @@ INSERT INTO `auteur` (`auteur_id`, `nom`, `prenom`) VALUES
 (73, 'Fischer', 'Elise'),
 (43, 'Fleming', 'Léah'),
 (42, 'Garcia', 'Kami'),
+(108, 'Gardner', 'Lisa'),
 (77, 'Giraud', 'Delphine'),
 (8, 'Gounelle', 'Laurent'),
 (12, 'Grimaldi', 'Virginie'),
@@ -98,6 +99,7 @@ INSERT INTO `auteur` (`auteur_id`, `nom`, `prenom`) VALUES
 (55, 'L.Hay', 'Louise'),
 (7, 'Laborie', 'Christian'),
 (101, 'Le Goasgoz', 'Marine'),
+(109, 'Lebert', 'Karine'),
 (16, 'Legardinier', 'Gilles'),
 (74, 'Lemaire', 'Philippe'),
 (27, 'Levy', 'Marc'),
@@ -127,6 +129,7 @@ INSERT INTO `auteur` (`auteur_id`, `nom`, `prenom`) VALUES
 (38, 'Pisco', 'Cristina'),
 (95, 'Pluchard', 'Mireille'),
 (97, 'Premoli', 'Anna'),
+(110, 'Rees', 'Tracy'),
 (71, 'Riley', 'Lucinda'),
 (66, 'Roberts', 'Nora'),
 (76, 'Roche', 'Florence'),
@@ -278,7 +281,7 @@ INSERT INTO `livre` (`livre_id`, `titre`, `fk_auteur`, `fk_genre`, `fk_support`)
 (97, 'La clinique du Docteur H.', 31, 5, 1),
 (98, 'Le démon du passé', 31, 5, 1),
 (99, 'Le parfum du bonheur est plus fort sous la pluie', 12, 3, 1),
-(100, 'et que ne durent que les moments doux', 12, 2, 1),
+(100, 'Et que ne durent que les moments doux', 12, 2, 1),
 (101, 'La vérité sur l\'affaire Harry Québert', 4, 1, 1),
 (102, 'Le grand dictionnaire des malaises et des maladies', 51, 7, 1),
 (103, 'Des amants de porcelaine', 52, 2, 1),
@@ -529,7 +532,46 @@ INSERT INTO `livre` (`livre_id`, `titre`, `fk_auteur`, `fk_genre`, `fk_support`)
 (384, 'La vie rêvée des chaussettes orphelines', 65, 2, 2),
 (385, 'Le secret d\'Helena', 71, 2, 2),
 (386, 'La jeune fille sur la falaise', 71, 2, 2),
-(387, 'La femme au manteau violet', 105, 2, 2);
+(387, 'La femme au manteau violet', 105, 2, 2),
+(388, 'La Ritournelle', 1, 1, 1),
+(389, 'La promesse d\'une île', 5, 1, 1),
+(390, 'L\'enfant oublié', 70, 2, 2),
+(391, 'Le secret de Clara\r\nL\'héritage de Clara', 6, 2, 2),
+(392, 'Le maître du Castellar', 68, 2, 2),
+(393, 'A la lumière de nos jours', 105, 2, 2),
+(394, 'Le jardin de l\'oubli', 105, 2, 2),
+(395, 'Ceux qui voulaient voir la mer', 105, 2, 2),
+(396, 'Et nous danserons sous les flocons', 105, 2, 2),
+(398, 'Les feux de Noël', 69, 2, 2),
+(399, 'Rendez-vous sous les flocons', 94, 2, 2),
+(400, 'Les femmes de Cardabelle', 70, 2, 2),
+(401, 'Tistou', 70, 2, 2),
+(402, 'On ne meurt que deux fois', 108, 1, 2),
+(403, 'Le septième mois', 108, 1, 2),
+(404, 'Le moulin du prieuré', 95, 2, 2),
+(405, 'Les mystères de Camille', 109, 2, 2),
+(406, 'Sidonie des bastides', 70, 2, 2),
+(407, 'Dans les pas d\'Ariane', 6, 2, 2),
+(408, 'La promesse de l\'océan', 6, 2, 2),
+(409, 'Les sirènes de Saint Malo', 6, 2, 2),
+(410, 'La camargaise', 6, 2, 2),
+(411, 'Un été de canicule', 6, 2, 2),
+(412, 'Rendez vous à Kerloc\'h', 6, 2, 2),
+(413, 'Le testament d\'Ariane', 6, 2, 2),
+(414, 'Quelqu\'un de bien', 6, 2, 2),
+(415, 'Eve Dallas\r\n34 Célébrités du crime', 66, 1, 2),
+(416, 'Eve Dallas\r\n37 Insolence du crime', 66, 1, 2),
+(417, 'Eve Dallas\r\n36 Préméditation du crime', 66, 1, 2),
+(418, 'Eve Dallas\r\n37.5 Crimes pour vengeance', 66, 1, 2),
+(419, 'Eve Dallas\r\n38 De crime en crime', 66, 1, 2),
+(420, 'Eve Dallas\r\n39 Crime en fête', 66, 1, 2),
+(421, 'Eve Dallas\r\n40 Obsession du crime', 66, 1, 2),
+(422, 'Eve Dallas\r\n35 Démence du crime', 66, 1, 2),
+(423, 'Le manoir aux roses', 110, 2, 2),
+(424, 'Le mas de la sarrasine', 95, 2, 2),
+(425, 'Noa', 27, 5, 1),
+(426, 'Istria', 89, 8, 2),
+(427, 'Une belle vie', 12, 2, 1);
 
 -- --------------------------------------------------------
 
@@ -591,7 +633,7 @@ ALTER TABLE `support`
 -- AUTO_INCREMENT pour la table `auteur`
 --
 ALTER TABLE `auteur`
-  MODIFY `auteur_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=108;
+  MODIFY `auteur_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=111;
 
 --
 -- AUTO_INCREMENT pour la table `genre`
@@ -603,7 +645,7 @@ ALTER TABLE `genre`
 -- AUTO_INCREMENT pour la table `livre`
 --
 ALTER TABLE `livre`
-  MODIFY `livre_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=388;
+  MODIFY `livre_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=428;
 
 --
 -- AUTO_INCREMENT pour la table `support`
