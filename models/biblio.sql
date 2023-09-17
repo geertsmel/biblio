@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : sam. 27 mai 2023 à 09:24
+-- Généré le : dim. 17 sep. 2023 à 10:05
 -- Version du serveur : 10.4.25-MariaDB
 -- Version de PHP : 8.0.23
 
@@ -39,12 +39,14 @@ CREATE TABLE `auteur` (
 
 INSERT INTO `auteur` (`auteur_id`, `nom`, `prenom`) VALUES
 (49, 'Anglade', 'Jean'),
+(118, 'Astrabie', 'Sophie'),
 (99, 'Atkins', 'Dani'),
 (23, 'Bannalec', 'Jean-Luc'),
 (9, 'Baron', 'Sylvie'),
 (11, 'Benzoni', 'Juliette'),
 (91, 'Blaine', 'Emily'),
 (63, 'Bodin', 'Nathalie'),
+(111, 'Bomann', 'Corina'),
 (57, 'Bordes', 'Gilbert'),
 (93, 'Borelli', 'Eve'),
 (86, 'Boulouri', 'Johanna'),
@@ -79,6 +81,7 @@ INSERT INTO `auteur` (`auteur_id`, `nom`, `prenom`) VALUES
 (13, 'Festy', 'Danièle'),
 (73, 'Fischer', 'Elise'),
 (43, 'Fleming', 'Léah'),
+(117, 'Fouchet', 'Lorraine'),
 (42, 'Garcia', 'Kami'),
 (108, 'Gardner', 'Lisa'),
 (77, 'Giraud', 'Delphine'),
@@ -115,6 +118,7 @@ INSERT INTO `auteur` (`auteur_id`, `nom`, `prenom`) VALUES
 (96, 'Mcpartlin', 'Anna'),
 (35, 'Meyer', 'Stéphanie'),
 (62, 'Meyer', 'Stephenie'),
+(115, 'Michel', 'Anne'),
 (47, 'Münzer', 'Hanni'),
 (2, 'Musso', 'Guillaume'),
 (67, 'Nelson Spielman', 'Lori'),
@@ -125,9 +129,11 @@ INSERT INTO `auteur` (`auteur_id`, `nom`, `prenom`) VALUES
 (87, 'Pécassou', 'Bernadette'),
 (64, 'Perrin', 'Valérie'),
 (21, 'Persson', 'Gunilla Linn'),
+(113, 'Peyrin', 'Laurence'),
 (59, 'Pion', 'Marylène'),
 (38, 'Pisco', 'Cristina'),
 (95, 'Pluchard', 'Mireille'),
+(116, 'Ponte', 'Carène'),
 (97, 'Premoli', 'Anna'),
 (110, 'Rees', 'Tracy'),
 (71, 'Riley', 'Lucinda'),
@@ -135,13 +141,15 @@ INSERT INTO `auteur` (`auteur_id`, `nom`, `prenom`) VALUES
 (76, 'Roche', 'Florence'),
 (83, 'Roussary', 'Jean-Pierre'),
 (44, 'Rowling', 'J.K.'),
+(112, 'Ryan', 'Jennifer'),
 (105, 'Sabard', 'Clarisse'),
 (45, 'Sabatier', 'Robert'),
 (98, 'Swan', 'Karen'),
 (5, 'Tal Men', 'Sophie'),
 (1, 'Valognes', 'Aurélie'),
 (65, 'Vareille', 'Marie'),
-(33, 'Varel', 'Brigitte');
+(33, 'Varel', 'Brigitte'),
+(114, 'West', 'Rebecca');
 
 -- --------------------------------------------------------
 
@@ -518,7 +526,6 @@ INSERT INTO `livre` (`livre_id`, `titre`, `fk_auteur`, `fk_genre`, `fk_support`)
 (359, 'La fille des pierres\r\n1 La chute du guetteur\r\n2 L\'appel de Tarent\r\n3 Par delà le sang\r\n', 101, 8, 2),
 (362, 'Hier ou demain', 104, 2, 2),
 (364, 'Le jardin des cyprès', 68, 2, 2),
-(365, 'Trois rêves', 66, 2, 2),
 (374, 'Les couleurs du silence', 77, 2, 2),
 (375, 'L\'éclair d\'argent', 92, 2, 2),
 (376, 'Une promesse bleu horizon', 92, 2, 2),
@@ -571,7 +578,47 @@ INSERT INTO `livre` (`livre_id`, `titre`, `fk_auteur`, `fk_genre`, `fk_support`)
 (424, 'Le mas de la sarrasine', 95, 2, 2),
 (425, 'Noa', 27, 5, 1),
 (426, 'Istria', 89, 8, 2),
-(427, 'Une belle vie', 12, 2, 1);
+(427, 'Une belle vie', 12, 2, 1),
+(428, 'Le pré d\'Anna', 70, 2, 2),
+(429, 'Le coeur à l\'envers', 53, 2, 2),
+(430, 'L\'île aux papillons', 111, 2, 2),
+(431, 'La chorale des dames de Chilbury', 112, 1, 1),
+(432, 'Trois cowboys à aimer', 112, 1, 1),
+(433, 'Une femme sous la menace', 66, 1, 2),
+(434, 'Nom de jeune fille', 6, 2, 2),
+(435, 'Le mas des tilleuls', 68, 2, 2),
+(436, 'Le sentier aride\r\n', 70, 2, 2),
+(437, 'Le valet de pique\r\n', 70, 2, 2),
+(438, 'Ma chérie', 113, 2, 2),
+(439, 'Sous le soleil de soledad', 113, 2, 2),
+(440, 'Les lettres de Rose', 105, 1, 2),
+(441, 'L\'amour écorché', 69, 2, 2),
+(442, 'Le village retrouvé', 70, 2, 2),
+(443, 'Jeanne courage', 70, 2, 2),
+(444, 'Le vent sur la vallée', 70, 2, 2),
+(445, 'Le temps des aubépines', 70, 2, 2),
+(446, 'Une nouvelle vie', 6, 2, 2),
+(447, 'Les roses sont éternelles', 68, 2, 2),
+(448, 'La nuit de l\'amandier', 68, 2, 2),
+(449, 'La famille Aubrey', 114, 2, 2),
+(450, 'La plage de la mariée', 105, 2, 2),
+(451, 'Matin d\'écume', 115, 2, 2),
+(452, 'Lunettes noires, peau de banane et Saint-Valentin', 116, 2, 2),
+(453, 'D\'ici là, porte-toi bien', 116, 2, 2),
+(454, 'Couleur champagne', 117, 2, 2),
+(455, 'Le pacte d\'Avril', 118, 2, 2),
+(456, 'Les sortilèges du Tremblay', 109, 2, 2),
+(457, 'Le destin d\'une insoumise', 66, 2, 2),
+(458, 'Les brumes du Causse', 70, 2, 2),
+(459, 'Le chemin de rocailles', 70, 2, 2),
+(460, 'Amandine', 70, 2, 2),
+(461, 'Céline, une vie toute simple', 70, 2, 2),
+(462, 'Les terres bleues', 70, 2, 2),
+(463, 'Le fils maudit', 68, 2, 2),
+(464, 'La roche au loup', 68, 2, 2),
+(465, 'Une si longue haine', 58, 2, 2),
+(466, 'De soie et de cendres', 95, 2, 2),
+(467, 'Nina et ses soeurs', 109, 2, 2);
 
 -- --------------------------------------------------------
 
@@ -633,7 +680,7 @@ ALTER TABLE `support`
 -- AUTO_INCREMENT pour la table `auteur`
 --
 ALTER TABLE `auteur`
-  MODIFY `auteur_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=111;
+  MODIFY `auteur_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=119;
 
 --
 -- AUTO_INCREMENT pour la table `genre`
@@ -645,7 +692,7 @@ ALTER TABLE `genre`
 -- AUTO_INCREMENT pour la table `livre`
 --
 ALTER TABLE `livre`
-  MODIFY `livre_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=428;
+  MODIFY `livre_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=468;
 
 --
 -- AUTO_INCREMENT pour la table `support`
