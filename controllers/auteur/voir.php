@@ -2,7 +2,7 @@
 $livres = array();
 $message="";
 $titre = "";
-
+$countAuteurs = 0;
     
 $db = connexion();
 
@@ -46,6 +46,7 @@ if(isset($_POST["nom"], $_POST["prenom"])){
 
     $auteurs = $stmt->fetchAll();
     // var_dump($auteurs);
+    $countAuteurs = count($auteurs);
 }
 else {
     $requete= "select auteur_id,nom, prenom from auteur";
@@ -57,6 +58,7 @@ else {
     );
     $auteurs = $stmt->fetchAll();
         // var_dump($livres);
+    $countAuteurs = count($auteurs);
 }
 
 

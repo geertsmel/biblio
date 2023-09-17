@@ -15,7 +15,7 @@ $stmt->execute(
 );
 $livres = $stmt->fetchAll();
     // var_dump($livres);
-   
+$countLivres = count($livres);   
     
 
 

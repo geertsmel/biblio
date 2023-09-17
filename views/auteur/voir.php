@@ -1,4 +1,4 @@
-<h2>Gérer les auteurs</h2>
+<h2>Gérer les <?= $countAuteurs; ?> auteurs</h2>
 <div class="flex row sa">
     <div id="gauche">
         <form action="#" method="post">

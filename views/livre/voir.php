@@ -1,4 +1,4 @@
-<h2>Gérer les livres</h2>
+<h2>Gérer les <?= $countLivres; ?> livres</h2>
 <div class="flex row sa">
     <div id="gauche">
         <form method="post">
