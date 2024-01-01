@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : dim. 03 déc. 2023 à 10:22
+-- Généré le : lun. 01 jan. 2024 à 11:17
 -- Version du serveur : 10.4.25-MariaDB
 -- Version de PHP : 8.0.23
 
@@ -56,6 +56,7 @@ INSERT INTO `auteur` (`auteur_id`, `nom`, `prenom`) VALUES
 (81, 'Bru', 'Julia\r\n'),
 (18, 'Bussi', 'Michel'),
 (26, 'Cario', 'Daniel'),
+(120, 'Cassegrain', 'Marie Claude'),
 (92, 'Chauvy', 'Véronique'),
 (78, 'Chavy', 'Isabelle'),
 (90, 'Chomin', 'Cécile'),
@@ -144,6 +145,8 @@ INSERT INTO `auteur` (`auteur_id`, `nom`, `prenom`) VALUES
 (112, 'Ryan', 'Jennifer'),
 (105, 'Sabard', 'Clarisse'),
 (45, 'Sabatier', 'Robert'),
+(119, 'Sentenac', 'Victoire'),
+(121, 'Sileme', 'Sandrine'),
 (98, 'Swan', 'Karen'),
 (5, 'Tal Men', 'Sophie'),
 (1, 'Valognes', 'Aurélie'),
@@ -366,7 +369,7 @@ INSERT INTO `livre` (`livre_id`, `titre`, `fk_auteur`, `fk_genre`, `fk_support`)
 (185, 'Crime gourmand à Saint-Malo', 23, 1, 2),
 (186, 'L\'orpheline des neiges \r\n1 L\'orpheline des neiges \r\n4 Les marionnettes du destin \r\n5 Les portes du passé', 69, 2, 2),
 (187, 'Serment d\'automne', 6, 2, 2),
-(188, 'Les sept soeurs\r\n1 Maïa\r\n2 La soeur de la tempête\r\n3 La soeur de l\'ombre\r\n4 La soeur à la perle\r\n5 La soeur de la lune\r\n6 La soeur du soleil\r\n7 La soeur disparue', 71, 2, 2),
+(188, 'Les sept soeurs\r\n1 Maïa\r\n2 La soeur de la tempête\r\n3 La soeur de l\'ombre\r\n4 La soeur à la perle\r\n5 La soeur de la lune\r\n6 La soeur du soleil\r\n7 La soeur disparue\r\n8 Atlas l\'histoire de Pa Salt', 71, 2, 2),
 (189, 'L\'étrange locataire de Madame Eliot', 9, 2, 2),
 (190, 'Les secrets de la Truyère', 9, 2, 2),
 (191, 'Impasse des demoiselles', 9, 2, 2),
@@ -490,7 +493,7 @@ INSERT INTO `livre` (`livre_id`, `titre`, `fk_auteur`, `fk_genre`, `fk_support`)
 (322, 'Devine qui vient pour Noël', 93, 3, 2),
 (323, 'A sa rencontre', 94, 2, 2),
 (324, 'Cher père Noël', 94, 2, 2),
-(325, 'Parce que c\'est toi', 94, 2, 2),
+(325, 'Parce que c\'est toi\r\n1. Envers et contre toi\r\n2. Au bout du monde', 94, 2, 2),
 (326, 'Ghost in love', 27, 2, 2),
 (327, 'Hot love', 90, 3, 2),
 (328, 'l\'orpheline de Saint-Aubin', 78, 2, 2),
@@ -530,7 +533,7 @@ INSERT INTO `livre` (`livre_id`, `titre`, `fk_auteur`, `fk_genre`, `fk_support`)
 (375, 'L\'éclair d\'argent', 92, 2, 2),
 (376, 'Une promesse bleu horizon', 92, 2, 2),
 (377, 'Le dernier salut de l\'amazone', 92, 2, 2),
-(378, 'La villa aux étoffes\r\n1 La villa aux étoffes\r\n2 Les filles de la villa aux étoffes\r\n3 L\'héritage de la villa aux étoffes\r\n4 Retour à la villa aux étoffes\r\n', 72, 2, 2),
+(378, 'La villa aux étoffes\r\n1 La villa aux étoffes\r\n2 Les filles de la villa aux étoffes\r\n3 L\'héritage de la villa aux étoffes\r\n4 Retour à la villa aux étoffes\r\n5 Tempête sur la villa aux étoffes\r\n6 Les adieux à la villa aux étoffes', 72, 2, 2),
 (379, 'Un ténébreux amant', 66, 2, 2),
 (380, 'A travers la nuit et le vent', 68, 2, 2),
 (381, 'Piège mortel à Belle Île', 23, 1, 2),
@@ -618,7 +621,76 @@ INSERT INTO `livre` (`livre_id`, `titre`, `fk_auteur`, `fk_genre`, `fk_support`)
 (464, 'La roche au loup', 68, 2, 2),
 (465, 'Une si longue haine', 58, 2, 2),
 (466, 'De soie et de cendres', 95, 2, 2),
-(467, 'Nina et ses soeurs', 109, 2, 2);
+(467, 'Nina et ses soeurs', 109, 2, 2),
+(468, 'Mon tour de manège', 16, 3, 1),
+(469, 'A faire voler nos âmes', 119, 2, 2),
+(470, 'Un camaïeu de gris et de beige', 120, 2, 2),
+(471, 'Un jour de plus', 121, 2, 2),
+(472, 'Le temps volé', 94, 2, 2),
+(473, 'Chère Mamie, tu vas rire...', 12, 3, 1),
+(474, 'Eve Dallas\r\n41 Pour l\'amour du crime', 66, 1, 2),
+(475, 'Eve Dallas\r\n41.5 Crimes par trois', 66, 1, 2),
+(476, 'Eve Dallas\r\n42 Confusion du crime', 66, 1, 2),
+(477, 'Eve Dallas\r\n43 Crimes sous silence', 66, 1, 2),
+(478, 'Eve Dallas\r\n44 Les noces du crime', 66, 1, 2),
+(479, 'Eve Dallas\r\n45 Révélations du crime', 66, 1, 2),
+(480, 'Eve Dallas\r\n46 Le crime est une oeuvre', 66, 1, 2),
+(481, 'Eve Dallas\r\n47 Crime et complot', 66, 1, 2),
+(482, 'Eve Dallas\r\n48 Les dessous du crime', 66, 1, 2),
+(483, 'Eve Dallas\r\n49 Crimes pour vendetta', 66, 1, 2),
+(484, 'Les enquêtes de Maud Delage\r\n1. Du sang sous les collines\r\n2. Un cri explosif', 69, 1, 2),
+(485, 'A feu et à sang', 6, 2, 2),
+(486, 'Au nom du père', 6, 2, 2),
+(487, 'Berill ou la passion en héritage', 6, 2, 2),
+(488, 'BM Blues', 6, 2, 2),
+(489, 'La forge au Loup', 68, 2, 2),
+(490, 'La cour aux paons', 68, 2, 2),
+(491, 'Le bois de lune', 68, 2, 2),
+(492, 'Le maitre ardoisier', 68, 2, 2),
+(493, 'Les tisserands de la Licorne', 68, 2, 2),
+(494, 'Le vent de Laube', 68, 2, 2),
+(495, 'Les bateliers du Rhone', 68, 2, 2),
+(496, 'Les dames de Meuse', 68, 2, 2),
+(497, 'La maison du cap', 68, 2, 2),
+(499, 'Le secret de Belle Epine', 68, 2, 2),
+(500, 'Retour en Provence', 68, 2, 2),
+(502, 'Pour oublier la nuit', 68, 2, 2),
+(503, 'A l\'ombre du bonheur', 53, 2, 2),
+(504, 'Comme un frère', 6, 2, 2),
+(505, 'L\'inconnu de Port Bélon', 23, 1, 2),
+(506, 'Dans le silence de l\'aube', 6, 2, 2),
+(507, 'D\'eau et de feu', 6, 2, 2),
+(508, 'D\'espoir et de promesse', 6, 2, 2),
+(509, 'Toutes les dernières fois', 53, 2, 2),
+(510, 'Face à la mer', 6, 2, 2),
+(511, 'Jack et le grande aventure du cochon de Noël', 44, 3, 2),
+(512, 'La maison des Aravis', 6, 2, 2),
+(513, 'Le choix d\'une femme libre', 6, 2, 2),
+(514, 'La saga du lac Saint-Jean\r\n1. Le scandale des eaux folles\r\n2. Les sortilèges du lac', 69, 2, 2),
+(515, 'Le silence d\'Amarine', 53, 2, 2),
+(516, 'Les années passion', 6, 2, 2),
+(517, 'Le bois de Battandière', 6, 2, 2),
+(518, 'Les vendanges de juillet', 6, 2, 2),
+(519, 'llckabog', 44, 8, 2),
+(520, 'L\'inconnue de Peyrolles', 6, 2, 2),
+(521, 'L\'Orpheline de Manhattan\r\n1. L\'Orpheline de Manhattan T1 et 2\r\n2. Les lumières de Brodway T1 et2\r\n3. Les larmes de l\'Hudson', 69, 2, 2),
+(522, 'La saga des bories\r\n1. L\'orpheline du bois des loups\r\n2. La demoiselle des bories ', 69, 2, 2),
+(523, 'Mano a mano', 6, 2, 2),
+(525, 'Objet de toutes les convoitises', 6, 2, 2),
+(526, 'Rendez-vous à Pigalle', 94, 2, 2),
+(528, 'Un cadeau inespéré', 6, 2, 2),
+(529, 'Trois dames de coeur et atout pique', 53, 2, 2),
+(530, 'Un mariage d\'amour', 6, 2, 2),
+(532, 'Une passion fauve', 6, 2, 2),
+(533, 'Le souffle des rêves', 105, 2, 2),
+(534, 'Un air d\'éternité', 105, 2, 2),
+(535, 'Les chemins de promesse', 95, 2, 2),
+(536, 'La belle italienne', 71, 2, 2),
+(537, 'La lettre d\'amour interdite', 71, 2, 2),
+(538, 'La vie a plus d\'imagination que nous', 105, 2, 2),
+(539, 'La vie est belle et drôle à la fois', 105, 2, 2),
+(540, 'Le domaine de l\'héritière', 71, 2, 2),
+(541, 'Les murmures du château', 71, 2, 2);
 
 -- --------------------------------------------------------
 
@@ -680,7 +752,7 @@ ALTER TABLE `support`
 -- AUTO_INCREMENT pour la table `auteur`
 --
 ALTER TABLE `auteur`
-  MODIFY `auteur_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=119;
+  MODIFY `auteur_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=122;
 
 --
 -- AUTO_INCREMENT pour la table `genre`
@@ -692,7 +764,7 @@ ALTER TABLE `genre`
 -- AUTO_INCREMENT pour la table `livre`
 --
 ALTER TABLE `livre`
-  MODIFY `livre_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=468;
+  MODIFY `livre_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=542;
 
 --
 -- AUTO_INCREMENT pour la table `support`
