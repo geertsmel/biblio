@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : lun. 01 jan. 2024 à 11:17
+-- Généré le : dim. 03 mars 2024 à 10:48
 -- Version du serveur : 10.4.25-MariaDB
 -- Version de PHP : 8.0.23
 
@@ -690,7 +690,30 @@ INSERT INTO `livre` (`livre_id`, `titre`, `fk_auteur`, `fk_genre`, `fk_support`)
 (538, 'La vie a plus d\'imagination que nous', 105, 2, 2),
 (539, 'La vie est belle et drôle à la fois', 105, 2, 2),
 (540, 'Le domaine de l\'héritière', 71, 2, 2),
-(541, 'Les murmures du château', 71, 2, 2);
+(541, 'Les murmures du château', 71, 2, 2),
+(542, 'Les petites filles démodées', 95, 2, 2),
+(543, 'Le petit batard', 95, 2, 2),
+(544, 'A l\'ombre des chataigniers', 95, 2, 2),
+(545, 'Le miroir d\'Amélie', 95, 2, 2),
+(546, 'Un parfum d\'amour éternel', 95, 2, 2),
+(547, 'Le choix de Diane', 95, 2, 2),
+(548, 'Halix de Bagard, dame de soie', 95, 2, 2),
+(549, 'L\'étoffe des jours', 95, 2, 2),
+(550, 'Le puits sans nom', 95, 2, 2),
+(551, 'Les diamants noirs', 95, 2, 2),
+(552, 'Les sentes buissonnières', 95, 2, 2),
+(553, 'Les souffleurs de rêve', 95, 2, 2),
+(555, 'Le rêve de Toinet', 95, 2, 2),
+(556, 'Isolde ou le secret des fleurs', 95, 2, 2),
+(557, 'Les dames de la glycine', 95, 2, 2),
+(558, 'Le syndrome de l\'hippocampe', 3, 3, 2),
+(559, 'Les mauvaises épouses', 3, 3, 2),
+(560, 'L\'habit ne fait pas le moineau', 3, 3, 2),
+(562, 'Demain est un autre jour', 67, 2, 1),
+(563, 'J\'ai dû rêver trop fort', 18, 5, 1),
+(564, 'N\'oublier jamais', 18, 5, 1),
+(565, 'Va où le vent te berce', 5, 2, 1),
+(566, 'Le talisman du Téméraire\r\n1. Les trois frères', 11, 6, 1);
 
 -- --------------------------------------------------------
 
@@ -764,7 +787,7 @@ ALTER TABLE `genre`
 -- AUTO_INCREMENT pour la table `livre`
 --
 ALTER TABLE `livre`
-  MODIFY `livre_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=542;
+  MODIFY `livre_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=567;
 
 --
 -- AUTO_INCREMENT pour la table `support`
