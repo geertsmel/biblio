@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : dim. 03 mars 2024 à 10:48
+-- Généré le : dim. 13 oct. 2024 à 17:10
 -- Version du serveur : 10.4.25-MariaDB
 -- Version de PHP : 8.0.23
 
@@ -66,6 +66,7 @@ INSERT INTO `auteur` (`auteur_id`, `nom`, `prenom`) VALUES
 (52, 'Coulonges', 'Georges'),
 (17, 'Courchay', 'Claude'),
 (22, 'D\'Onaglia', 'Frédérick'),
+(122, 'Da Costa', 'Mélissa'),
 (70, 'de Palet', 'Marie'),
 (58, 'Delomme', 'Martine'),
 (10, 'Delorme', 'Philippe'),
@@ -377,7 +378,7 @@ INSERT INTO `livre` (`livre_id`, `titre`, `fk_auteur`, `fk_genre`, `fk_support`)
 (194, 'La fontaine aux violettes', 68, 2, 2),
 (195, 'Le scandale des eaux folles T1', 69, 2, 2),
 (196, 'L\'orpheline de Manhattan Partie 1', 69, 2, 2),
-(197, 'Le mystère de Soline\r\n3 Un chalet sous la neige', 69, 2, 2),
+(197, 'Le mystère de Soline\r\n1 Au delà du temps T1 et 2\r\n2 Le vallon des loups T2\r\n3 Un chalet sous la neige', 69, 2, 2),
 (198, 'L\'héritier des Beaulieu', 6, 2, 2),
 (199, 'Les chemins de garance', 68, 3, 2),
 (200, 'Le moulin des sources', 68, 2, 2),
@@ -673,7 +674,7 @@ INSERT INTO `livre` (`livre_id`, `titre`, `fk_auteur`, `fk_genre`, `fk_support`)
 (518, 'Les vendanges de juillet', 6, 2, 2),
 (519, 'llckabog', 44, 8, 2),
 (520, 'L\'inconnue de Peyrolles', 6, 2, 2),
-(521, 'L\'Orpheline de Manhattan\r\n1. L\'Orpheline de Manhattan T1 et 2\r\n2. Les lumières de Brodway T1 et2\r\n3. Les larmes de l\'Hudson', 69, 2, 2),
+(521, 'L\'Orpheline de Manhattan\r\n1. L\'Orpheline de Manhattan T1 et 2\r\n2. Les lumières de Brodway T1 et2\r\n3. Les larmes de l\'Hudson T1 et 2', 69, 2, 2),
 (522, 'La saga des bories\r\n1. L\'orpheline du bois des loups\r\n2. La demoiselle des bories ', 69, 2, 2),
 (523, 'Mano a mano', 6, 2, 2),
 (525, 'Objet de toutes les convoitises', 6, 2, 2),
@@ -713,7 +714,59 @@ INSERT INTO `livre` (`livre_id`, `titre`, `fk_auteur`, `fk_genre`, `fk_support`)
 (563, 'J\'ai dû rêver trop fort', 18, 5, 1),
 (564, 'N\'oublier jamais', 18, 5, 1),
 (565, 'Va où le vent te berce', 5, 2, 1),
-(566, 'Le talisman du Téméraire\r\n1. Les trois frères', 11, 6, 1);
+(566, 'Le talisman du Téméraire\r\n1. Les trois frères', 11, 6, 1),
+(567, 'Plus grand que le ciel', 12, 3, 2),
+(568, 'Nos adorables belles filles', 1, 3, 2),
+(569, 'Tout le bleu du ciel', 122, 2, 2),
+(570, 'Meurtres au Montana', 66, 1, 2),
+(571, 'Un secret trop précieux', 66, 1, 2),
+(572, 'N\'oublie jamais', 66, 1, 2),
+(573, 'La mentaliste', 66, 1, 2),
+(574, 'Les illusionnistes', 66, 2, 2),
+(575, 'Le cycle des sept\r\n1. Le serment\r\n2. Le rituel\r\n3. La pierre païenne', 66, 2, 2),
+(576, 'Magie irlandaise\r\n1. Les joyaux du soleil\r\n2. Les larmes de la lune\r\n3. Le coeur de la mer\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n', 66, 2, 2),
+(577, 'Eve Dallas\r\n50 Crime en lettre d\'or', 66, 1, 2),
+(578, 'Eve Dallas\r\n51 Dans l\'ombre du crime', 66, 1, 2),
+(579, 'Eve Dallas\r\n52 Crime et cabale', 66, 1, 2),
+(580, 'Eve Dallas\r\n53 Les reliques du crime', 49, 1, 2),
+(581, 'Eve Dallas\r\n54 Les cicatrices du crime', 66, 1, 2),
+(582, 'Eve Dallas\r\n55 Désespoir ducrime', 66, 1, 2),
+(583, 'Eve Dallas\r\nCrimes et chaos\r\n', 66, 1, 2),
+(584, 'Là où les souvenirs se révèlent', 77, 2, 2),
+(585, 'Amis ou ennemis', 66, 2, 2),
+(586, 'Bayou', 66, 2, 2),
+(587, 'Ce soir et à jamais', 66, 2, 2),
+(588, 'Comme une ombre dans la nuit', 66, 2, 2),
+(589, 'Coupable innocence', 66, 1, 2),
+(590, 'Du soleil dans les yeux', 66, 2, 2),
+(591, 'Ennemies', 66, 1, 2),
+(592, 'Et si je te retrouvais', 66, 2, 2),
+(593, 'Fille de star', 66, 2, 2),
+(594, 'J\'ai tant rêvé', 66, 2, 2),
+(595, 'La force d\'un rêve', 66, 2, 2),
+(596, 'La maison aux souvenirs', 66, 1, 2),
+(598, 'La rivale', 66, 1, 2),
+(599, 'La villa', 66, 2, 2),
+(600, 'Le collectionneur', 66, 2, 2),
+(601, 'Le menteur', 66, 1, 2),
+(602, 'Le refuge de l\'ange', 66, 2, 2),
+(603, 'L\'éclat d\'une passion', 66, 2, 2),
+(604, 'Les diamants du passé', 66, 2, 2),
+(605, 'Les feux de la vengeance', 66, 1, 2),
+(606, 'Les lumières du nord', 66, 2, 2),
+(607, 'L\'éveil d\'une passion', 66, 2, 2),
+(608, 'L\'île de secret', 66, 2, 2),
+(609, 'L\'ombre du danger', 66, 1, 2),
+(610, 'Maléfice', 66, 1, 2),
+(612, 'Par la volonté du prince', 66, 1, 2),
+(613, 'Par une nuit sans mémoire', 66, 1, 2),
+(614, 'Possession', 66, 1, 2),
+(615, 'Retour au Maryland', 66, 2, 2),
+(616, 'Séduit malgré lui', 66, 2, 2),
+(617, 'Un dangereux secret', 66, 1, 2),
+(618, 'Un été au maryland', 66, 2, 2),
+(619, 'Les collines de la chance', 66, 2, 2),
+(620, 'Un coeur naufragé', 66, 2, 2);
 
 -- --------------------------------------------------------
 
@@ -775,7 +828,7 @@ ALTER TABLE `support`
 -- AUTO_INCREMENT pour la table `auteur`
 --
 ALTER TABLE `auteur`
-  MODIFY `auteur_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=122;
+  MODIFY `auteur_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=123;
 
 --
 -- AUTO_INCREMENT pour la table `genre`
@@ -787,7 +840,7 @@ ALTER TABLE `genre`
 -- AUTO_INCREMENT pour la table `livre`
 --
 ALTER TABLE `livre`
-  MODIFY `livre_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=567;
+  MODIFY `livre_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=621;
 
 --
 -- AUTO_INCREMENT pour la table `support`

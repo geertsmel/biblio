@@ -37,7 +37,7 @@
             <?php
                 foreach($supports as $key => $value){
                     
-                    $selected = ($key == $support) ? "selected" : "";
+                    $selected = ($key == $support || $key == 2) ? "selected" : "";
                     echo "<option value='$key' $selected> $value</option>";
                 }
             ?>
