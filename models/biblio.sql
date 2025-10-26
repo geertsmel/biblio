@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : ven. 04 juil. 2025 à 09:35
+-- Généré le : dim. 26 oct. 2025 à 09:38
 -- Version du serveur : 10.4.25-MariaDB
 -- Version de PHP : 8.0.23
 
@@ -125,6 +125,7 @@ INSERT INTO `auteur` (`auteur_id`, `nom`, `prenom`) VALUES
 (115, 'Michel', 'Anne'),
 (47, 'Münzer', 'Hanni'),
 (2, 'Musso', 'Guillaume'),
+(127, 'Musso', 'Valentin'),
 (67, 'Nelson Spielman', 'Lori'),
 (102, 'Néron Morgat', 'Evelyne'),
 (84, 'Norton', 'Claire'),
@@ -831,7 +832,23 @@ INSERT INTO `livre` (`livre_id`, `titre`, `fk_auteur`, `fk_genre`, `fk_support`)
 (686, 'La prochaine fois', 27, 2, 1),
 (687, 'Vous revoir', 27, 2, 1),
 (688, 'Toutes ces choses qu\'on ne s\'est pas dites', 27, 2, 1),
-(689, 'L\'étrange voyage de Monsieur Daldry', 27, 2, 1);
+(689, 'L\'étrange voyage de Monsieur Daldry', 27, 2, 1),
+(690, 'Le manoir des oublies\r\n1.Les temps glorieux\r\n2.les années de tourmente\r\n3.Un nouvel espoir\r\n\r\n', 72, 2, 2),
+(691, 'Eve Dallas\r\n57. Vengeance du crime', 66, 1, 2),
+(692, 'La mort c\'est  ma vie', 123, 1, 2),
+(693, 'La passeuse d\'âme', 65, 2, 2),
+(694, 'Petits réveillons entre amis', 65, 3, 2),
+(695, 'Désenchantées', 65, 2, 2),
+(697, 'Qu\'à jamais j\'oublie', 127, 1, 2),
+(698, 'Un autre jour', 127, 1, 2),
+(699, 'L\'homme du grand hôtel', 127, 1, 2),
+(700, 'Dernier été pour lisa', 127, 1, 2),
+(701, 'Une vraie famille', 127, 1, 2),
+(702, 'Sans faille', 127, 1, 2),
+(703, 'Le murmure de l\'ogre', 127, 1, 2),
+(704, 'Les cendres froides', 127, 1, 2),
+(705, 'La ronde des innocents', 127, 1, 2),
+(706, 'Café Engel\r\n1. Une nouvelle ère\r\n2. Les années fatidiques\r\n3. Le temps de l\'espoir\r\n4. Un vent de renouveau', 49, 1, 2);
 
 -- --------------------------------------------------------
 
@@ -893,7 +910,7 @@ ALTER TABLE `support`
 -- AUTO_INCREMENT pour la table `auteur`
 --
 ALTER TABLE `auteur`
-  MODIFY `auteur_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=126;
+  MODIFY `auteur_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=128;
 
 --
 -- AUTO_INCREMENT pour la table `genre`
@@ -905,7 +922,7 @@ ALTER TABLE `genre`
 -- AUTO_INCREMENT pour la table `livre`
 --
 ALTER TABLE `livre`
-  MODIFY `livre_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=690;
+  MODIFY `livre_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=707;
 
 --
 -- AUTO_INCREMENT pour la table `support`
