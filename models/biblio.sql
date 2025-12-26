@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : dim. 26 oct. 2025 à 09:38
+-- Généré le : ven. 26 déc. 2025 à 16:00
 -- Version du serveur : 10.4.25-MariaDB
 -- Version de PHP : 8.0.23
 
@@ -56,6 +56,7 @@ INSERT INTO `auteur` (`auteur_id`, `nom`, `prenom`) VALUES
 (3, 'Brisby', 'Zoé'),
 (81, 'Bru', 'Julia\r\n'),
 (18, 'Bussi', 'Michel'),
+(131, 'Calmel', 'Mireille'),
 (26, 'Cario', 'Daniel'),
 (120, 'Cassegrain', 'Marie Claude'),
 (92, 'Chauvy', 'Véronique'),
@@ -68,6 +69,7 @@ INSERT INTO `auteur` (`auteur_id`, `nom`, `prenom`) VALUES
 (17, 'Courchay', 'Claude'),
 (22, 'D\'Onaglia', 'Frédérick'),
 (122, 'Da Costa', 'Mélissa'),
+(128, 'De Broc', 'Nathalie'),
 (70, 'de Palet', 'Marie'),
 (58, 'Delomme', 'Martine'),
 (10, 'Delorme', 'Philippe'),
@@ -140,6 +142,7 @@ INSERT INTO `auteur` (`auteur_id`, `nom`, `prenom`) VALUES
 (95, 'Pluchard', 'Mireille'),
 (116, 'Ponte', 'Carène'),
 (97, 'Premoli', 'Anna'),
+(130, 'Quinn', 'Julia'),
 (110, 'Rees', 'Tracy'),
 (71, 'Riley', 'Lucinda'),
 (66, 'Roberts', 'Nora'),
@@ -526,7 +529,7 @@ INSERT INTO `livre` (`livre_id`, `titre`, `fk_auteur`, `fk_genre`, `fk_support`)
 (352, 'Un sourire à tomber', 16, 3, 2),
 (353, 'A la vie, à la mer', 102, 2, 2),
 (354, 'A un souffle de ta voix\r\n', 89, 2, 2),
-(355, 'Abigaël, messagère des anges 1, 2, 3, 4, 5 et 6', 66, 2, 2),
+(355, 'Abigaël, messagère des anges 1, 2, 3, 4, 5 et 6', 69, 2, 2),
 (356, 'Ce que murmure le vent', 103, 2, 2),
 (357, 'Cinq meurtres pour cinq clochers', 100, 5, 2),
 (358, 'Doucement renaît le jour', 77, 2, 2),
@@ -818,7 +821,6 @@ INSERT INTO `livre` (`livre_id`, `titre`, `fk_auteur`, `fk_genre`, `fk_support`)
 (668, 'La société très secrète des sorcières extraordinaires', 125, 8, 2),
 (669, 'Les pionnières\r\n1. Une place au soleil\r\n2. Un arc en ciel dans le bush\r\n3. Un rêve à portée de main', 72, 2, 2),
 (670, 'Cassandra\r\n1. Le destin de Cassandra\r\n2. Cassandra et ses soeurs\r\n3. L\'héritage de Cassandra', 72, 2, 2),
-(674, 'Alice\r\n', 105, 2, 2),
 (676, 'Swan Hill\r\n1. Les pionnières\r\n2. Au bout du rêve\r\n3. La traversée\r\n4. Une chance à saisir', 72, 2, 2),
 (677, 'A une seconde près', 27, 2, 2),
 (678, 'Café Engel\r\n1. Une nouvelle ère\r\n2. Les années fatidiques\r\n3. Le temps de l\'espoir\r\n4. Un vent de renouveau\r\n', 49, 1, 2),
@@ -848,7 +850,26 @@ INSERT INTO `livre` (`livre_id`, `titre`, `fk_auteur`, `fk_genre`, `fk_support`)
 (703, 'Le murmure de l\'ogre', 127, 1, 2),
 (704, 'Les cendres froides', 127, 1, 2),
 (705, 'La ronde des innocents', 127, 1, 2),
-(706, 'Café Engel\r\n1. Une nouvelle ère\r\n2. Les années fatidiques\r\n3. Le temps de l\'espoir\r\n4. Un vent de renouveau', 49, 1, 2);
+(706, 'Café Engel\r\n1. Une nouvelle ère\r\n2. Les années fatidiques\r\n3. Le temps de l\'espoir\r\n4. Un vent de renouveau', 49, 1, 2),
+(707, 'La sorcière de Locronan', 128, 2, 2),
+(708, 'La robe pourpre', 128, 2, 2),
+(709, 'La dame des forges', 128, 2, 2),
+(710, 'Fleur de sable', 128, 2, 2),
+(711, 'Et toujours ces ombres sur le fleuve', 128, 2, 2),
+(712, 'La chronique des Bridgerton\r\n1. Daphné et le duc\r\n2. Anthony\r\n3. Benedict\r\n4. Colin\r\n5. Eloise\r\n6. Francesca\r\n7. Hyacinthe\r\n8. Grégory\r\n9. Des années plus tard\r\n\r\n\r\n', 130, 6, 2),
+(713, 'Le règne des lions', 131, 2, 2),
+(714, 'Le lit d\'Aliénor', 131, 6, 2),
+(715, 'Le bal des louves\r\n1. La chambre maudite\r\n2. La vengeance d\'Isabeau', 131, 6, 2),
+(716, 'La rivière des ames', 131, 6, 2),
+(717, 'La vengeance de Jeanne', 131, 6, 2),
+(718, 'La marquise de Sade', 131, 6, 2),
+(719, 'La prisonnière du diable', 131, 6, 2),
+(720, 'Les amants de l\'été 44\r\n1. Les amants de l\'été 44\r\n2. Pour l\'amour de Lauren\r\n', 109, 2, 2),
+(721, 'Là où tu iras j\'irai', 65, 2, 2),
+(722, 'Les lionnes de Venise\r\nT1 et T2', 131, 6, 2),
+(723, 'La filles des templiers\r\nT1 et T2', 131, 6, 2),
+(724, 'La reine des lumières\r\n1. Elora\r\n2. Terra Incognita', 131, 6, 2),
+(725, 'La douce magie de Noël', 105, 2, 2);
 
 -- --------------------------------------------------------
 
@@ -910,7 +931,7 @@ ALTER TABLE `support`
 -- AUTO_INCREMENT pour la table `auteur`
 --
 ALTER TABLE `auteur`
-  MODIFY `auteur_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=128;
+  MODIFY `auteur_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=133;
 
 --
 -- AUTO_INCREMENT pour la table `genre`
@@ -922,7 +943,7 @@ ALTER TABLE `genre`
 -- AUTO_INCREMENT pour la table `livre`
 --
 ALTER TABLE `livre`
-  MODIFY `livre_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=707;
+  MODIFY `livre_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=726;
 
 --
 -- AUTO_INCREMENT pour la table `support`
